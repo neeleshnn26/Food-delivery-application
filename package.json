@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Food application",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "keywords": [
@@ -17,5 +19,8 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  }
+  },
+  "browsersList":[
+    "last 2 versions"
+  ]
 }

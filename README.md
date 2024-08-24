@@ -54,7 +54,19 @@ root.render(parent);
 - In project we dont have only only one package.json and package-lock.json , each dependency (eg:parcel) have its own package.  json and package-lock.json as it has its own dependencies.
 - node modules should not be added to git , because it can be regenerated through (npm install)
 - package.json and package-lock.json should be added to git because they are important files containing the dependency and its exact version in package-lock.json.
+
 - node_modules: The actual code of all dependencies your project needs to run.
 - package-lock.json: A detailed map of exactly what should be in node_modules, ensuring consistent installs across different environments.
+
 - import React from "react" ,"react-dom" ( we are importing these from the node-module).
 - dist folder , .parce-cache can be re-generated during the build process. so, we can put these into .gitignore file.
+
+# Episode_03
+
+- JSX => Babel transpiles it to react.createElement => React.createElement ->(JS object) => HTML Element (on render)
+- React component
+  - class based component
+  - functional component
+- React component is a JS function , which returns some piece of JSX.
+- component composition [ component inside compponent is called component composition].
+- inside curly braces {}, you can write any JS in react.

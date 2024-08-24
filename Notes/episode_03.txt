@@ -1,0 +1,8 @@
+
+- JSX => Babel transpiles it to react.createElement => React.createElement ->(JS object) => HTML Element (on render)
+- React component
+  - class based component
+  - functional component
+- React component is a JS function , which returns some piece of JSX.
+- component composition [ component inside compponent is called component composition].
+- inside curly braces {}, you can write any JS in react.
