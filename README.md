@@ -23,4 +23,38 @@
     </script>
 
 - REACT
- - 
+ - const heading= React.createElement("h1",{},"Hello from REACT" );
+   const root = ReactDOM.createRoot(document.getElementById("root"));
+   root.render(heading);
+
+ - (for nested child)
+   - const parent = React.createElement("div",{id:"parent"},
+    React.createElement("div",{id:"child"},
+        [React.createElement("h1",{},"hello h1 tag"),
+        React.createElement("h2",{},"hello h2 tag")]
+    )
+)
+
+const root= ReactDOM.createRoot(document.getElementById("root"));
+root.render(parent);
+
+- Console.log(heading) : it gives heading as a object , and when heading is rendered on root it is converted int HTML file 
+- React.createElement(object)  ===>  HTML(Browser understands)
+   
+
+# Episode 2 
+
+- Package.json is the configuration for "NPM"
+
+# adding packages and dependencies into our application
+
+- npm init ( initialising npm , it gives package.json file to us )
+- npm install -D parcel ( installing parcel[bundler] into our app through npm)
+- transitive dependencies (eg: we need parcel as a dependency in our project, but parcel also have its own dependecies and      these dependencies can have their own dependencies , this is called transitive dependency )
+- In project we dont have only only one package.json and package-lock.json , each dependency (eg:parcel) have its own package.  json and package-lock.json as it has its own dependencies.
+- node modules should not be added to git , because it can be regenerated through (npm install)
+- package.json and package-lock.json should be added to git because they are important files containing the dependency and its exact version in package-lock.json.
+- node_modules: The actual code of all dependencies your project needs to run.
+- package-lock.json: A detailed map of exactly what should be in node_modules, ensuring consistent installs across different environments.
+- import React from "react" ,"react-dom" ( we are importing these from the node-module).
+- dist folder , .parce-cache can be re-generated during the build process. so, we can put these into .gitignore file.

@@ -1,0 +1,21 @@
+{
+  "name": "food-delivery-aplication",
+  "version": "1.0.0",
+  "description": "Food application",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Neelesh Nainwal",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
