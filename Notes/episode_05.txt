@@ -1,0 +1,15 @@
+# Episode_05
+
+- Two types of export and import.
+  - Default export , named export 
+  - Named export - it is used when we have to export multiple things from the same file.
+  - yes, we can use both named and default export in a single file.
+  - onClick handler takes the call back funtion , onClick={()=>{}}
+  - if we dont use useState to update the data , then our UI layer and data layer will not be in sync , if we update or change our data without useState then the data will change definietly but our UI will not be updated.so,that is why we use useState hook to keep our data layer and UI layer in sync. 
+  - When state changes , react re-render the component.
+  - react is fast because it is doing efficient DOM manipulation , by the concept of virtual DOM.
+  - const[resList,setResList]=useState(), this statement can also br written as ,
+    - const arr=useState()
+    - const[resList,setResList]=arr
+    - const[resList]=arr[0]
+    - const[setResList]=arr[1]

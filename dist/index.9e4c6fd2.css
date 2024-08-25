@@ -9,13 +9,13 @@
   width: 150px;
 }
 
-.list > ul {
+.nav-items > ul {
   margin: 10px;
   list-style-type: none;
   display: flex;
 }
 
-.list > ul > li {
+.nav-items > ul > li {
   cursor: pointer;
   border: 1px solid #000;
   margin: 0 30px;
@@ -66,5 +66,10 @@
   width: 200px;
   height: 500px;
   padding: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #adff2f;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

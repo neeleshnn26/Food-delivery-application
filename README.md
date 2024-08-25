@@ -40,6 +40,7 @@ root.render(parent);
 
 - Console.log(heading) : it gives heading as a object , and when heading is rendered on root it is converted int HTML file 
 - React.createElement(object)  ===>  HTML(Browser understands)
+
    
 
 # Episode 2 
@@ -70,3 +71,18 @@ root.render(parent);
 - React component is a JS function , which returns some piece of JSX.
 - component composition [ component inside compponent is called component composition].
 - inside curly braces {}, you can write any JS in react.
+
+# Episode_04
+
+- passing props to a component is like passing argument to a function.
+- console.log(props): Props are JS object.
+
+# Episode_05
+
+- Two types of export and import.
+  - Default export , named export 
+  - Named export - it is used when we have to export multiple things from the same file.
+  - yes, we can use both named and default export in a single file.
+  - onClick handler takes the call back funtion , onClick={()=>{}}
+  - if we dont use useState to update the data , then our UI layer and data layer will not be in sync , if we update or change our data without useState then the data will change definietly but our UI will not be updated.so,that is why we use useState hook to keep our data layer and UI layer in sync. 
+  - When state changes , react re-render the component.
